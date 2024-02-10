@@ -51,6 +51,9 @@ nav ul {
 	display: flex;
 	justify-content: space-evenly;
 	}
+nav li {
+	list-style-type: none;
+	}
 nav a {
 	color: white;
 	text-decoration: none;
@@ -89,9 +92,8 @@ main li {
 	box-shadow:  0 2px 4px -2px black;*/
 	font-family: 'Poppins', sans-serif;
 	font-style: italic;
-	}
-li {
-	list-style-type: none;
+	list-style-type: square;
+	list-style-position: inside;
 	}
 section {
 	margin: 5vmin 0;
@@ -108,9 +110,30 @@ section a {
 section a:hover, section a:active {
 	text-decoration: underline;
 	}
+#home {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	}
+.profile {
+	max-width: 33.33vw;
+	object-fit:contain;
+	}
+@media screen and (orientation:portrait) {
+	#home {
+		display: flex;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		justify-content: center;
+		}
+	.profile {
+		max-width: 60vw;
+		object-fit:contain;
+		}
+	}
 /* footer */	
 footer {
-	padding: 1vmin;
+	padding: 1.5vmin;
 	background-color: #3E0E19;
 	color: white;
 	font-size: 66%;
@@ -152,119 +175,122 @@ footer a:hover, footer a:active {
 		<main>
 			<h1 class="title">Rosanna Di Carlo - Biologa Nutrizionista a Siracusa</h1>
 			<!-- Sezione Home -->
-			<section id="home">
-				<h2>Benvenuto nel Mondo del Benessere attraverso l'Alimentazione</h2>
-				<p>Sono Rosanna Di Carlo, biologa nutrizionista. Creo piani alimentari scientificamente studiati, rompendo gli schemi delle mode passeggere.</p>
-				<p>Il mio obiettivo è rendere piacevole e socialmente integrato il tuo viaggio verso una corretta alimentazione, promuovendo il benessere a lungo termine con approcci personalizzati e basati sulla scienza.</p>
-				<p>Voglio aiutarti a scoprire il piacere di mangiare sano e senza privazioni. Credo che la nutrizione debba essere un viaggio appagante e condivisibile, senza rinunce che compromettano la tua socialità.</p>
-				<p>Ti propongo protocolli alimentari altamente personalizzati, cuciti su misura per le tue esigenze individuali. Rompo gli schemi delle mode passeggere, concentrandomi invece su piani studiati scientificamente che favoriscano il benessere a lungo termine.</p>
-				<p>Ogni consiglio che ti fornisco è supportato dagli studi più recenti. Mi impegno a rendere la nutrizione comprensibile e accessibile a chiunque, fornendo suggerimenti pratici che puoi integrare facilmente nella tua vita quotidiana.</p>
-				<p>Sono qui per condividere con te la mia passione per la nutrizione e guidarti verso scelte alimentari equilibrate, per accompagnarti in un percorso di apprendimento senza stress, dove la socialità e il piacere del cibo rimangono al centro.</p>
-				<p>Sono entusiasta di iniziare questo percorso con te! Se sei pronto/a a esplorare un approccio alla nutrizione che privilegia il benessere e il piacere, non esitare a contattarmi. Insieme possiamo creare abitudini alimentari sostenibili e raggiungere i tuoi obiettivi di salute e forma fisica.
-				</p>
-				<p>— Rosanna Di Carlo, biologa nutrizionista a Siracusa</p>
-				<p>
-					<a href="tel:+39%20123%20456789">Chiama ora </a>
-				e prenota la tua consulenza gratuita, oppure 
-					<a href="mailto:esempio@email.it">Scrivi una email</a>.
-				</p>
+			<section id="home">			
+				<img class="profile" src="img/profile_pic.jpg">
+				<div>
+					<h2>Benvenuto nel Mondo del Benessere attraverso l'Alimentazione</h2>
+					<p>Sono la Dott.ssa Rosanna Di Carlo, Biologa Nutrizionista a Siracusa.
+					</p>
+					<p>Sono qui per condividere con te la mia passione per la nutrizione e guidarti verso scelte alimentari equilibrate, per accompagnarti in un percorso di apprendimento senza stress, dove la socialità e il piacere del cibo rimangono al centro.
+					</p>
+					<p>Rompo gli schemi delle mode passeggere, concentrandomi su piani studiati scientificamente che favoriscano il benessere a lungo termine. Per questo ti propongo protocolli alimentari altamente personalizzati, cuciti su misura per le tue esigenze.
+					</p>
+					<p>Mi impegno a rendere la nutrizione comprensibile e accessibile a chiunque, fornendo suggerimenti pratici che puoi integrare facilmente nella tua vita quotidiana.
+					</p>
+					<p>Insieme possiamo creare abitudini alimentari sostenibili e raggiungere i tuoi obiettivi di salute e forma fisica.
+					</p>
+					<p>Se sei pronto/a a esplorare un approccio alla nutrizione che privilegia il benessere e il piacere,
+						<br> 
+						<a href="tel:+393273527210">Chiama ora 
+						</a>
+					e prenota la tua consulenza gratuita, oppure 
+						<br>
+						<a href="mailto:dicarlonutrizione@gmail.com">Scrivi una email.
+						</a>
+					</p>
+					<p>— Rosanna Di Carlo, Biologa Nutrizionista a Siracusa</p>
+				</div>
 			</section>
-			<!-- Sezione Chi Siamo -->
+			<!-- Sezione Chi Sono -->
 			<section id="chi-sono">
 				<h2>Chi Sono</h2>
 				<h3>La mia formazione</h3>
-				<p>Ho conseguito la laurea triennale in Scienze biologiche e la laurea magistrale in Scienze della nutrizione umana. Iscritta all’Ordine dei biologi della Sicilia, sono in continua formazione e aggiornamento per garantirti un supporto all’avanguardia. La mia adesione all’Associazione Biologi Nutrizionisti Italiani (ABNI) riflette la promessa di seguire gli standard più elevati nel settore.</p>
+				<p>Ho conseguito la Laurea triennale in Scienze Biologiche e la Laurea magistrale in Scienze della Nutrizione Umana. Iscritta all’
+					<a href="https://www.ordinebiologisicilia.it/elenco-iscritti/">Ordine dei biologi della Sicilia
+					</a>
+				, sono in continua formazione e aggiornamento per garantirti un supporto all’avanguardia. <!--La mia adesione all’Associazione Biologi Nutrizionisti Italiani (ABNI) riflette la promessa di seguire gli standard più elevati nel settore.-->
+				</p>
 				<h3>La mia filosofia</h3>
-				<p>Metto al primo posto l’empatia e l’individualità: il benessere nutrizionale è un percorso unico che abbraccia stili di vita, preferenze personali e obiettivi specifici. Collaboreremo insieme per sviluppare soluzioni personalizzate senza privazioni, trasformando la “dieta” in un percorso sostenibile e senza rinunce, integrato nella tua vita quotidiana per promuovere una cultura alimentare duratura.</p>
-				<p>Ecco i principi a cui mi ispiro:</p>
-				<ul>
-					<li>Scienza come Fondamento: tutti i consigli che ti propongo sono sempre basati sulla ricerca scientifica più recente nel campo della nutrizione, per far sì che ogni indicazione sia fondata su prove solide e adatta alle tue esigenze specifiche.
-					</li>
-					<li>Personalizzazione Estesa: Non esiste una soluzione universale in materia di alimentazione. Ti offro solo piani alimentari altamente personalizzati e cuciti su misura, considerando la tua biologia, le tue abitudini e preferenze alimentari, i tuoi obiettivi e le tue condizioni specifiche.
-					</li>
-					<li>Sostenibilità a Lungo Termine: le diete temporanee e le tendenze passeggere non funzionano. L'obiettivo è farti costruire abitudini alimentari sostenibili che potrai mantenere nel tempo, garantendoti il successo a lungo termine nella gestione del tuo peso e della tua salute.
-					</li>
-					<li>Socialità e Piacere del Cibo: ncoraggio sempre una relazione positiva con il cibo. Integrare scelte alimentari consapevoli, preservando la socialità, garantisce che il piacere del cibo rimanga al centro del tuo percorso nutrizionale, senza restrizioni e privazioni.
-					</li>
-					<li>Approccio Olistico: Considero il tuo benessere nel suo complesso, non limitandomi solo agli aspetti nutrizionali. Esploreremo insieme gli elementi chiave del tuo stile di vita, come il sonno, lo stress e l'attività fisica. Per assicurarti un servizio di alto livello su quest’ultimo aspetto, collaboro attivamente con un 
-							<a href="https://gaetanotrigilio.github.io/">Chinesiologo e Personal Trainer </a>
-						che puoi trovare nel mio stesso studio.	Questo  ti permetterà di ottimizzare i tempi, consentendoti di concentrarti su nutrizione ed esercizio fisico senza stress aggiuntivo.
-					</li>
-				</ul>
+				<p>Metto al primo posto l’empatia e l’individualità: il benessere nutrizionale è un percorso unico che abbraccia stili di vita, preferenze personali e obiettivi specifici. Collaboreremo insieme per sviluppare soluzioni personalizzate senza privazioni, trasformando la “dieta” in un percorso sostenibile e senza rinunce, integrato nella tua vita quotidiana per promuovere una cultura alimentare duratura. Ecco i principi a cui mi ispiro:
+				</p>
+				<h4>Scienza come Fondamento</h4>
+				<p>Tutti i consigli che ti propongo sono sempre basati sulla ricerca scientifica più recente nel campo della nutrizione, per far sì che ogni indicazione sia fondata su prove solide e adatta alle tue esigenze specifiche.
+				</p>
+				<h4>Personalizzazione</h4>
+				<p>Non esiste una soluzione universale in materia di alimentazione. Ti offro solo piani alimentari altamente personalizzati e cuciti su misura, considerando la tua biologia, le tue abitudini e preferenze alimentari, i tuoi obiettivi e le tue condizioni specifiche.
+				</p>
+				<h4>Sostenibilità a Lungo Termine</h4>
+				<p>Le diete temporanee e le tendenze passeggere non funzionano. L'obiettivo è farti costruire abitudini alimentari sostenibili che
+potrai mantenere nel tempo, garantendoti il successo a lungo termine nella gestione del tuo peso e della tua salute.
+				</p>
+				<h4>Socialità e Piacere del Cibo</h4>
+				<p>Incoraggio sempre una relazione positiva con il cibo. Integrare scelte alimentari consapevoli, preservando la socialità, garantisce
+che il piacere del cibo rimanga al centro del tuo percorso nutrizionale, senza restrizioni e privazioni.
+				</p>
+				<h4>Approccio Olistico</h4>
+				<p>Considero il tuo benessere nel suo complesso, non limitandomi solo agli aspetti nutrizionali. Esploreremo insieme gli elementi chiave del tuo stile di vita, come il sonno, lo stress e l'attività fisica. Per assicurarti un servizio di alto livello su quest’ultimo aspetto, collaboro attivamente con un 
+					<br>
+					<a href="https://gaetanotrigilio.github.io/">Chinesiologo e Personal Trainer 
+					</a>
+				che puoi trovare nel mio stesso studio. Questo ti permetterà di ottimizzare i tempi, consentendoti di concentrarti su nutrizione ed esercizio fisico senza stress aggiuntivo.
+				</p>
 				<h3>La mia grande promessa</h3>
-				<p>la mia grande promessa è...</p>
+				<p>Voglio accompagnarti in un percorso verso una vita sana e piena, in cui le tue scelte alimentari riflettano la tua unicità e ti
+portino verso una salute duratura e soddisfacente. Insieme, lavoreremo per mettere te al centro del processo, permettendoti di prendere il controllo della tua salute e del tuo benessere.
+				</p>
+				<p>La mia grande promessa è di essere al tuo fianco nell'aiutarti a diventare autonomo e consapevole nelle tue scelte alimentari.
+				</p>
 			</section>
 			<section id="servizi">
 				<h2>I Miei Servizi</h2>
-				<p>Benvenuto/a nella sezione dedicata ai servizi che offro per guidarti verso una vita più sana e equilibrata attraverso la nutrizione. La mia missione è fornire supporto personalizzato e basato sulla scienza per aiutarti a raggiungere i tuoi obiettivi di salute.</p>
-				<p>Mi specializzo nel fornire supporto nutrizionale per una vasta gamma di condizioni e patologie, tra cui:
-					<ul>
-						<li>Nutrizione in Gravidanza: Consigli personalizzati per supportare la salute della mamma e dello sviluppo del bambino.
-						</li>
-						<li>Problemi Intestinali: Gestisco condizioni come la sindrome dell'intestino irritabile, fornendo strategie nutrizionali per alleviare i sintomi.
-						</li>
-						<li>Gestione del Sovrappeso: Approcci personalizzati per raggiungere e mantenere un peso corporeo sano.
-						</li>
-						<li>Malattie Metaboliche (come diabete): Supporto nutrizionale per gestire efficacemente condizioni metaboliche.
-						</li>
-						<li>Intolleranze AlimentariIdentificazione e gestione delle intolleranze alimentari per promuovere la salute intestinale.
-						</li>
-						<li>Allergie:Adattamento del piano alimentare per soddisfare le esigenze di coloro con allergie specifiche.
-						</li>
-						<li>Vegani e Vegetariani: Fornisco consigli nutrizionali bilanciati per chi segue diete vegetariane o vegane.
-						</li>
-						<li>Perdita o Aumento di Peso: Supporto personalizzato per raggiungere gli obiettivi di peso in modo sano.
-						</li>
-						<li>Disturbi del Comportamento Alimentare: Approccio sensibile per affrontare problemi come anoressia, bulimia e binge eating.
-						</li>
-						<li>Soggetti Sportivi: Consulenze adattate alle esigenze nutrizionali specifiche degli atleti per ottimizzare le prestazioni.
-						</li>
-						<li>Donne in Pre-Menopausa/Menopausa: Gestione nutrizionale dei cambiamenti ormonali e del benessere generale durante questa fase della vita.
-						</li>
-						<li>In Presenza di Patologie Accertate: Supporto nutrizionale personalizzato per affrontare condizioni mediche già diagnosticate.
-						</li>
-						<li>Benessere del Corpo
-							<ul>
-								<li>Gonfiore Addominale
-								</li>
-								<li>Stipsi
-								</li>
-								<li>Reflusso Gastroesofageo, Gastrite, Disfagia
-								</li>
-								<li>Benessere della Pelle: Acne, Psoriasi, Cellulite
-								</li>
-							</ul>
-						</li>
-						<li>Educazione Alimentare: Promuovo un'educazione alimentare mirata a migliorare la consapevolezza su scelte alimentari sane e a favorire uno stile di vita equilibrato.
-						</li>
-					</ul>
+				<p>Una alimentazione specifica e mirata può dare benefici significativi in una grande varietà di situazioni. Rivolgendoti al Nutrizionista puoi avere risultati tangibili se:
 				</p>
-				<p>Se desideri approfondire la tua comprensione della nutrizione o affrontare specifiche condizioni, non esitare a contattarmi per una consulenza personalizzata.</p>
-				<p>Grazie per la fiducia nel percorrere insieme il cammino verso un benessere nutrizionale completo!</p>
-				<p>Rosanna Di Carlo, Biologa e Nutrizionista</p>
-				<h3>COSA FARE DI QUESTI TITOLI A CUI AVEVAMO PENSATO IN PRIMA ISTANZA?</h3>
-				<h4>Vogliamo comunque farne cenno da qualche parte?</h4>
 				<ul>
-					<li>
-						<p style="margin-bottom: 0cm">Piani alimentari personalizzati</p>
+					<li>desideri compiere scelte più informate e consapevoli su ciò che mangi;
 					</li>
-					<li>
-						<p style="margin-bottom: 0cm">Anamnesi</p>
+					<li>sei una donna in età fertile, in gravidanza, in allattamento	oppure in menopausa e soffri di endometriosi e/o ovaio policistico (PCOS);
 					</li>
-					<li>
-						<p style="margin-bottom: 0cm">Misure antropometriche</p>
+					<li>hai disturbi del tratto alimentare, come la sindrome dell'intestino irritabile, il reflusso gastro-esofageo, la gastrite, la diarrea o la stipsi cronica;
 					</li>
-					<li>
-						<p style="margin-bottom: 0cm">Plicometria </p>
+					<li>vuoi un aiuto per la gestione del peso e il mantenimento della forma fisica;
 					</li>
-					<li>
-						<p>BIA: Bioimpedenziometria</p>
+					<li>soffri di malattie endocrine o metaboliche,  come il diabete, l'ipercolesterolemia, l'ipertrigliceridemia o la tiroidite di Hashimoto;
+					</li>
+					<li>hai allergie o intolleranze alimentari;
+					</li>
+					<li>soffri o vuoi prevenire le malattie cardiovascolari, inclusa l'ipertensione;
+					</li>
+					<li>vuoi un piano alimentare che rispetti il tuo stile di vita e le tue considerazioni etiche, religiose o culturali;
+					</li>
+					<li>pratichi sport e vuoi massimizzare prestazioni, recupero e salute generale;
+					</li>
+					<li>vuoi adottare strategie alimentari che supportino la gestione dello stress e promuovano il benessere emotivo;
+					</li>
+					<li>vuoi combattere l’invecchiamento e supportare la longevità attraverso l’alimentazione;
+					</li>
+					<li>vuoi migliorare il benessere della tua pelle e combattere dall’interno fastidiosi inestetismi, come acne, psoriasi e cellulite;
+					</li>
 				</ul>
+				<h3>Prima Visita Nutrizionale e Controlli Successivi</h3>
+				<p>Mi piace ascoltare attentamente le tue preoccupazioni e rispondere a tutte le tue domande in modo da garantire una comprensione completa del percorso che intraprenderemo insieme.
+				</p>
+				<p>Durante la prima visita nutrizionale, ci conosceremo meglio. Inizieremo con una discussione approfondita riguardo alla tua storia clinica, abitudini alimentari, stile di vita e obiettivi di salute. Questo momento è fondamentale per comprendere le tue esigenze e sviluppare un piano nutrizionale personalizzato.
+				</p>
+				<p>Durante la consulenza, esploreremo le tue preferenze alimentari, le intolleranze o allergie alimentari, e discuteremo di eventuali condizioni mediche preesistenti. Sarà utile portare con te le analisi del sangue recenti e, in caso di malattie accertate, le varie cartelle cliniche e le terapie farmacologiche, per una valutazione più accurata e completa. Per ottenere una valutazione completa della tua situazione attuale, verranno rilevate anche le misure antropometriche, incluse peso, altezza, circonferenze e pliche adipose ove previsto.
+				</p>
+				<p>Dopo aver valutato attentamente le informazioni raccolte, lavoreremo insieme per sviluppare un piano alimentare adatto alle tue esigenze specifiche e ai tuoi obiettivi di salute. Questo piano potrebbe includere raccomandazioni su quali alimenti includere nella tua dieta, quantità consigliate, suggerimenti per la preparazione dei pasti e eventuali integratori, se necessario.
+				</p>
+				<p>Durante i successivi controlli, monitoreremo i tuoi progressi e apporteremo eventuali aggiustamenti al piano nutrizionale in base alle tue esigenze e ai tuoi risultati. Questi incontri periodici sono un'opportunità per valutare insieme i tuoi successi, affrontare eventuali sfide e continuare a supportarti nel raggiungere i tuoi obiettivi di salute a lungo termine.
+				</p>
+				<p>Il mio obiettivo è essere la tua guida nella tua ricerca del benessere. Sono qui per offrirti supporto, motivazione e consulenza lungo tutto il tuo percorso verso una vita più sana e appagante.
+				</p>
+				<p>Non vedo l'ora di iniziare questo viaggio insieme!
+				</p>
 			</section>
 		<!-- Sezione Contatti -->
 			<section id="contatti">
 				<h2>Contatti</h2>    
-				<p>Puoi contattarci utilizzando le seguenti informazioni:</p>
+				<p>Puoi contattarmi utilizzando le seguenti informazioni:</p>
 				<address>
 					<p>Rosanna Di Carlo</p>
 					<p>Viale Teracati, 110</p>
@@ -273,25 +299,25 @@ footer a:hover, footer a:active {
 						<a href="mailto:dicarlonutrizione@gmail.com">dicarlonutrizione@gmail.com</a>
 					</p>    
 					<p>Telefono: 
-						<a href="tel:123456789">+39 123456789</a>
+						<a href="tel:3273527210">327 352 7210</a>
 					</p>
 				</address>
 			</section>
 		</main>
 		<!-- Piede di Pagina -->
 		<footer>
-	    		<p>&copy; 2024 Rosanna Di Carlo - Biologa Nutrizionista</p>
+	    		<p>© 2024 Rosanna Di Carlo - Biologa Nutrizionista</p>
 	    		<p>Indirizzo: Viale Teracati, 110 - 96100, Siracusa</p>
 	    		<p>Email: 
 	    			<a href="mailto:dicarlonutrizione@gmail.com">dicarlonutrizione@gmail.com</a>
     			</p>
 	    		<p>Telefono: 
-				<a href="tel:123456789">+39 123456789</a>
+				<a href="tel:3273527210">327 352 7210</a>
 			</p>
-			<p>Social: 
+			<!--p>Social: 
 	    			<a href="https://www.facebook.com/tuapagina" target="_blank" rel="noopener noreferrer">Facebook</a>
 	    			<a href="https://www.instagram.com/tuoaccount" target="_blank" rel="noopener noreferrer">Instagram</a>
-    			</p>
+    			</p-->
 		</footer>
 	</body>
 </html>
