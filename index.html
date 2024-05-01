@@ -121,20 +121,40 @@ section a:hover, section a:active {
 	align-items: flex-start;
 	justify-content: center;
 	}
+#chi-sono {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+	}
+#servizi {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+	}
 .profile {
+	/*margin: 0;*/
+	padding: 0;
 	max-width: 33.33vw;
 	object-fit:contain;
+	border-radius: 12px;
+	box-shadow: 0 2px 4px -2px black;
 	}
 @media screen and (orientation:portrait) {
-	#home {
+	#home, #chi-sono, #servizi {
 		display: flex;
 		align-items: flex-start;
 		flex-wrap: wrap;
 		justify-content: center;
 		}
 	.profile {
-		max-width: 60vw;
+		/*margin: 0;*/
+		padding: 0;
+		max-width: 90vw;
 		object-fit:contain;
+		border-radius: 12px;
+		box-shadow:  0 2px 4px -2px black;
 		}
 	}
 /* footer */	
@@ -182,7 +202,7 @@ footer a:hover, footer a:active {
 			<h1 class="title">Rosanna Di Carlo - Biologa Nutrizionista a Siracusa</h1>
 			<!-- Sezione Home -->
 			<section id="home">			
-				<img class="profile" src="img/profile_pic.jpg">
+				<img class="profile" src="img/studio1.jpg">
 				<div>
 					<h2>Benvenuto nel Mondo del Benessere attraverso l'Alimentazione</h2>
 					<p>Sono la Dott.ssa Rosanna Di Carlo, Biologa Nutrizionista a Siracusa.
@@ -209,89 +229,98 @@ footer a:hover, footer a:active {
 			</section>
 			<!-- Sezione Chi Sono -->
 			<section id="chi-sono">
-				<h2>Chi Sono</h2>
-				<h3>La mia formazione</h3>
-				<p>Ho conseguito la Laurea triennale in Scienze Biologiche e la Laurea magistrale in Scienze della Nutrizione Umana. Iscritta all’
-					<a href="https://www.ordinebiologisicilia.it/elenco-iscritti/">Ordine dei biologi della Sicilia
-					</a>
-				, sono in continua formazione e aggiornamento per garantirti un supporto all’avanguardia. <!--La mia adesione all’Associazione Biologi Nutrizionisti Italiani (ABNI) riflette la promessa di seguire gli standard più elevati nel settore.-->
-				</p>
-				<h3>La mia filosofia</h3>
-				<p>Metto al primo posto l’empatia e l’individualità: il benessere nutrizionale è un percorso unico che abbraccia stili di vita, preferenze personali e obiettivi specifici. Collaboreremo insieme per sviluppare soluzioni personalizzate senza privazioni, trasformando la “dieta” in un percorso sostenibile e senza rinunce, integrato nella tua vita quotidiana per promuovere una cultura alimentare duratura. Ecco i principi a cui mi ispiro:
-				</p>
-				<h4>Scienza come Fondamento</h4>
-				<p>Tutti i consigli che ti propongo sono sempre basati sulla ricerca scientifica più recente nel campo della nutrizione, per far sì che ogni indicazione sia fondata su prove solide e adatta alle tue esigenze specifiche.
-				</p>
-				<h4>Personalizzazione</h4>
-				<p>Non esiste una soluzione universale in materia di alimentazione. Ti offro solo piani alimentari altamente personalizzati e cuciti su misura, considerando la tua biologia, le tue abitudini e preferenze alimentari, i tuoi obiettivi e le tue condizioni specifiche.
-				</p>
-				<h4>Sostenibilità a Lungo Termine</h4>
-				<p>Le diete temporanee e le tendenze passeggere non funzionano. L'obiettivo è farti costruire abitudini alimentari sostenibili che
+				<img class="profile" src="img/profile_pic.jpg">
+				<div>
+					<h2>Chi Sono</h2>
+					<h3>La mia formazione</h3>
+					<p>Ho conseguito la Laurea triennale in Scienze Biologiche e la Laurea magistrale in Scienze della Nutrizione Umana. Iscritta all’
+						<a href="https://www.ordinebiologisicilia.it/elenco-iscritti/">Ordine dei biologi della Sicilia
+						</a>
+					, sono in continua formazione e aggiornamento per garantirti un supporto all’avanguardia. La mia adesione all’Associazione Biologi Nutrizionisti Italiani (ABNI) riflette la promessa di seguire gli standard più elevati nel settore.
+					</p>
+					<h3>La mia filosofia</h3>
+					<p>Metto al primo posto l’empatia e l’individualità: il benessere nutrizionale è un percorso unico che abbraccia stili di vita, preferenze personali e obiettivi specifici. Collaboreremo insieme per sviluppare soluzioni personalizzate senza privazioni, trasformando la “dieta” in un percorso sostenibile e senza rinunce, integrato nella tua vita quotidiana per promuovere una cultura alimentare duratura. Ecco i principi a cui mi ispiro:
+					</p>
+					<h4>Scienza come Fondamento</h4>
+					<p>Tutti i consigli che ti propongo sono sempre basati sulla ricerca scientifica più recente nel campo della nutrizione, per far sì che ogni indicazione sia fondata su prove solide e adatta alle tue esigenze specifiche.
+					</p>
+					<h4>Personalizzazione</h4>
+					<p>Non esiste una soluzione universale in materia di alimentazione. Ti offro solo piani alimentari altamente personalizzati e cuciti su misura, considerando la tua biologia, le tue abitudini e preferenze alimentari, i tuoi obiettivi e le tue condizioni specifiche.
+					</p>
+					<h4>Sostenibilità a Lungo Termine</h4>
+					<p>Le diete temporanee e le tendenze passeggere non funzionano. L'obiettivo è farti costruire abitudini alimentari sostenibili che
 potrai mantenere nel tempo, garantendoti il successo a lungo termine nella gestione del tuo peso e della tua salute.
-				</p>
-				<h4>Socialità e Piacere del Cibo</h4>
-				<p>Incoraggio sempre una relazione positiva con il cibo. Integrare scelte alimentari consapevoli, preservando la socialità, garantisce
+					</p>
+					<h4>Socialità e Piacere del Cibo</h4>
+					<p>Incoraggio sempre una relazione positiva con il cibo. Integrare scelte alimentari consapevoli, preservando la socialità, garantisce
 che il piacere del cibo rimanga al centro del tuo percorso nutrizionale, senza restrizioni e privazioni.
-				</p>
-				<h4>Approccio Olistico</h4>
-				<p>Considero il tuo benessere nel suo complesso, non limitandomi solo agli aspetti nutrizionali. Esploreremo insieme gli elementi chiave del tuo stile di vita, come il sonno, lo stress e l'attività fisica. Per assicurarti un servizio di alto livello su quest’ultimo aspetto, collaboro attivamente con un 
-					<br>
-					<a href="https://gaetanotrigilio.it/">Chinesiologo e Personal Trainer 
-					</a>
+					</p>
+					<h4>Approccio Olistico</h4>
+					<p>Considero il tuo benessere nel suo complesso, non limitandomi solo agli aspetti nutrizionali. Esploreremo insieme gli elementi chiave del tuo stile di vita, come il sonno, lo stress e l'attività fisica. Per assicurarti un servizio di alto livello su quest’ultimo aspetto, collaboro attivamente con un 
+						<br>
+						<a href="https://gaetanotrigilio.it/">Chinesiologo e Personal Trainer 
+						</a>
 				che puoi trovare nel mio stesso studio. Questo ti permetterà di ottimizzare i tempi, consentendoti di concentrarti su nutrizione ed esercizio fisico senza stress aggiuntivo.
-				</p>
-				<h3>La mia grande promessa</h3>
-				<p>Voglio accompagnarti in un percorso verso una vita sana e piena, in cui le tue scelte alimentari riflettano la tua unicità e ti
+					</p>
+					<h3>La mia grande promessa</h3>
+					<p>Voglio accompagnarti in un percorso verso una vita sana e piena, in cui le tue scelte alimentari riflettano la tua unicità e ti
 portino verso una salute duratura e soddisfacente. Insieme, lavoreremo per mettere te al centro del processo, permettendoti di prendere il controllo della tua salute e del tuo benessere.
-				</p>
-				<p>La mia grande promessa è di essere al tuo fianco nell'aiutarti a diventare autonomo e consapevole nelle tue scelte alimentari.
-				</p>
+					</p>
+					<p>La mia grande promessa è di essere al tuo fianco nell'aiutarti a diventare autonomo e consapevole nelle tue scelte alimentari.
+					</p>
+				</div>
 			</section>
 			<section id="servizi">
-				<h2>I Miei Servizi</h2>
-				<p>Una alimentazione specifica e mirata può dare benefici significativi in una grande varietà di situazioni. Rivolgendoti al Nutrizionista puoi avere risultati tangibili se:
-				</p>
-				<ul>
-					<li>desideri compiere scelte più informate e consapevoli su ciò che mangi;
-					</li>
-					<li>sei una donna in età fertile, in gravidanza, in allattamento	oppure in menopausa e soffri di endometriosi e/o ovaio policistico (PCOS);
-					</li>
-					<li>hai disturbi del tratto alimentare, come la sindrome dell'intestino irritabile, il reflusso gastro-esofageo, la gastrite, la diarrea o la stipsi cronica;
-					</li>
-					<li>vuoi un aiuto per la gestione del peso e il mantenimento della forma fisica;
-					</li>
-					<li>soffri di malattie endocrine o metaboliche,  come il diabete, l'ipercolesterolemia, l'ipertrigliceridemia o la tiroidite di Hashimoto;
-					</li>
-					<li>hai allergie o intolleranze alimentari;
-					</li>
-					<li>soffri o vuoi prevenire le malattie cardiovascolari, inclusa l'ipertensione;
-					</li>
-					<li>vuoi un piano alimentare che rispetti il tuo stile di vita e le tue considerazioni etiche, religiose o culturali;
-					</li>
-					<li>pratichi sport e vuoi massimizzare prestazioni, recupero e salute generale;
-					</li>
-					<li>vuoi adottare strategie alimentari che supportino la gestione dello stress e promuovano il benessere emotivo;
-					</li>
-					<li>vuoi combattere l’invecchiamento e supportare la longevità attraverso l’alimentazione;
-					</li>
-					<li>vuoi migliorare il benessere della tua pelle e combattere dall’interno fastidiosi inestetismi, come acne, psoriasi e cellulite;
-					</li>
-				</ul>
-				<h3>Prima Visita Nutrizionale e Controlli Successivi</h3>
-				<p>Mi piace ascoltare attentamente le tue preoccupazioni e rispondere a tutte le tue domande in modo da garantire una comprensione completa del percorso che intraprenderemo insieme.
-				</p>
-				<p>Durante la prima visita nutrizionale, ci conosceremo meglio. Inizieremo con una discussione approfondita riguardo alla tua storia clinica, abitudini alimentari, stile di vita e obiettivi di salute. Questo momento è fondamentale per comprendere le tue esigenze e sviluppare un piano nutrizionale personalizzato.
-				</p>
-				<p>Durante la consulenza, esploreremo le tue preferenze alimentari, le intolleranze o allergie alimentari, e discuteremo di eventuali condizioni mediche preesistenti. Sarà utile portare con te le analisi del sangue recenti e, in caso di malattie accertate, le varie cartelle cliniche e le terapie farmacologiche, per una valutazione più accurata e completa. Per ottenere una valutazione completa della tua situazione attuale, verranno rilevate anche le misure antropometriche, incluse peso, altezza, circonferenze e pliche adipose ove previsto.
-				</p>
-				<p>Dopo aver valutato attentamente le informazioni raccolte, lavoreremo insieme per sviluppare un piano alimentare adatto alle tue esigenze specifiche e ai tuoi obiettivi di salute. Questo piano potrebbe includere raccomandazioni su quali alimenti includere nella tua dieta, quantità consigliate, suggerimenti per la preparazione dei pasti e eventuali integratori, se necessario.
-				</p>
-				<p>Durante i successivi controlli, monitoreremo i tuoi progressi e apporteremo eventuali aggiustamenti al piano nutrizionale in base alle tue esigenze e ai tuoi risultati. Questi incontri periodici sono un'opportunità per valutare insieme i tuoi successi, affrontare eventuali sfide e continuare a supportarti nel raggiungere i tuoi obiettivi di salute a lungo termine.
-				</p>
-				<p>Il mio obiettivo è essere la tua guida nella tua ricerca del benessere. Sono qui per offrirti supporto, motivazione e consulenza lungo tutto il tuo percorso verso una vita più sana e appagante.
-				</p>
-				<p>Non vedo l'ora di iniziare questo viaggio insieme!
-				</p>
+				<img class="profile" src="img/studio2.jpg">
+				<div>
+					<h2>I Miei Servizi</h2>
+					<p>Una alimentazione specifica e mirata può dare benefici significativi in una grande varietà di situazioni. Rivolgendoti al Nutrizionista puoi avere risultati tangibili se:
+					</p>
+					<ul>
+						<li>desideri compiere scelte più informate e consapevoli su ciò che mangi;
+						</li>
+						<li>sei una donna in età fertile, in gravidanza, in allattamento	oppure in menopausa e soffri di endometriosi e/o ovaio policistico (PCOS);
+						</li>
+						<li>hai disturbi del tratto alimentare, come la sindrome dell'intestino irritabile, il reflusso gastro-esofageo, la gastrite, la diarrea o la stipsi cronica;
+						</li>
+						<li>vuoi un aiuto per la gestione del peso e il mantenimento della forma fisica;
+						</li>
+						<li>soffri di malattie endocrine o metaboliche,  come il diabete, l'ipercolesterolemia, l'ipertrigliceridemia o la tiroidite di Hashimoto;
+						</li>
+						<li>hai allergie o intolleranze alimentari;
+						</li>
+						<li>soffri o vuoi prevenire le malattie cardiovascolari, inclusa l'ipertensione;
+						</li>
+						<li>vuoi un piano alimentare che rispetti il tuo stile di vita e le tue considerazioni etiche, religiose o culturali;
+						</li>
+						<li>pratichi sport e vuoi massimizzare prestazioni, recupero e salute generale;
+						</li>
+						<li>vuoi adottare strategie alimentari che supportino la gestione dello stress e promuovano il benessere emotivo;
+						</li>
+						<li>vuoi combattere l’invecchiamento e supportare la longevità attraverso l’alimentazione;
+						</li>
+						<li>vuoi migliorare il benessere della tua pelle e combattere dall’interno fastidiosi inestetismi, come acne, psoriasi e cellulite;
+						</li>
+					</ul>
+				</div>
+				<img class="profile" src="img/studio3.jpg">
+				<div>
+					<h3>Prima Visita Nutrizionale e Controlli Successivi</h3>
+					<p>Mi piace ascoltare attentamente le tue preoccupazioni e rispondere a tutte le tue domande in modo da garantire una comprensione completa del percorso che intraprenderemo insieme.
+					</p>
+					<p>Durante la prima visita nutrizionale, ci conosceremo meglio. Inizieremo con una discussione approfondita riguardo alla tua storia clinica, abitudini alimentari, stile di vita e obiettivi di salute. Questo momento è fondamentale per comprendere le tue esigenze e sviluppare un piano nutrizionale personalizzato.
+					</p>
+					<p>Durante la consulenza, esploreremo le tue preferenze alimentari, le intolleranze o allergie alimentari, e discuteremo di eventuali condizioni mediche preesistenti. Sarà utile portare con te le analisi del sangue recenti e, in caso di malattie accertate, le varie cartelle cliniche e le terapie farmacologiche, per una valutazione più accurata e completa. Per ottenere una valutazione completa della tua situazione attuale, verranno rilevate anche le misure antropometriche, incluse peso, altezza, circonferenze e pliche adipose ove previsto.
+					</p>
+					<p>Dopo aver valutato attentamente le informazioni raccolte, lavoreremo insieme per sviluppare un piano alimentare adatto alle tue esigenze specifiche e ai tuoi obiettivi di salute. Questo piano potrebbe includere raccomandazioni su quali alimenti includere nella tua dieta, quantità consigliate, suggerimenti per la preparazione dei pasti e eventuali integratori, se necessario.
+					</p>
+					<p>Durante i successivi controlli, monitoreremo i tuoi progressi e apporteremo eventuali aggiustamenti al piano nutrizionale in base alle tue esigenze e ai tuoi risultati. Questi incontri periodici sono un'opportunità per valutare insieme i tuoi successi, affrontare eventuali sfide e continuare a supportarti nel raggiungere i tuoi obiettivi di salute a lungo termine.
+					</p>
+					<p>Il mio obiettivo è essere la tua guida nella tua ricerca del benessere. Sono qui per offrirti supporto, motivazione e consulenza lungo tutto il tuo percorso verso una vita più sana e appagante.
+					</p>
+					<p>Non vedo l'ora di iniziare questo viaggio insieme!
+					</p>
+				</div>
 			</section>
 		<!-- Sezione Contatti -->
 			<section id="contatti">
@@ -320,6 +349,9 @@ portino verso una salute duratura e soddisfacente. Insieme, lavoreremo per mette
 	    		<p>Telefono: 
 				<a href="tel:3273527210">327 352 7210</a>
 			</p>
+			<p>WhatsApp: 
+					<a href="https://wa.me/393273527210" alt="Avvia una conversazione su WhatsApp" title="clicca per avviare una chat su Whatsapp">avvia una conversazione</a>
+				</p>
 			<!--p>Social: 
 	    			<a href="https://www.facebook.com/tuapagina" target="_blank" rel="noopener noreferrer">Facebook</a>
 	    			<a href="https://www.instagram.com/tuoaccount" target="_blank" rel="noopener noreferrer">Instagram</a>
