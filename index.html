@@ -1,180 +1,12 @@
 <!DOCTYPE html>
 <html lang="it">
 	<head>
-    		<meta charset="UTF-8">
-    		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    		<meta name="description" content="Biologa Nutrizionista a Siracusa. Consulenze alimentari di alta qualità basate su metodi scientifici.">
-    		<title>Rosanna Di Carlo - Biologa Nutrizionista a Siracusa</title>
-    		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    		<style>
-    	
-        /* Aggiungi qui eventuali stili CSS personalizzati */
-        /* PALETTE DI COLORI:
-        1: #3E0E19; molto scuro, per testi e contorni;
-        2: #A51D3D; acceso, per navbar, footer e/o titoli;
-        3: #DF4A6D; medio, alternativa per navbar, footer e/o titoli; colore dei link;
-        4: #EEA0B2; tenue, non ancora definito, per contrasto con scuro e acceso;
-        5: white; bianco, per sfondo pagina;*/
-/* generale */       
-@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap');
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	font-family: 'Poppins', sans-serif;
-	/*border: 1px solid black;*/
-	font-family: 'Oswald', serif;
-	scroll-behavior: smooth;
-	}
-/* header */
-header {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	}
-.logo {
-	width: 90vw;
-	margin: 5vmin 0;
-	}
-/* navbar */
-nav {
-	background-color: #A51D3D;
-	height: 9vmin;
-	position: sticky;
-	top: 0;
-	display: flex;
-	align-items: center;
-	box-shadow: 0 10px 20px -10px black;
-	}
-nav ul {
-	text-align: center;
-	width: 100%;
-	display: flex;
-	justify-content: space-evenly;
-	}
-nav li {
-	list-style-type: none;
-	}
-nav a {
-	color: white;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 4vmin;
-	}
-nav a:hover, nav a:active {
-	text-decoration: underline;
-	}
-/* main content */
-main {
-	padding: 1vmin 2vmin;
-	line-height: 1.6;
-	color: #3E0E19;
-	}
-main * {
-	padding: inherit;
-	}
-.title {
-	color: #DF4A6D;
-	text-align: center;
-	}
-	}
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Oswald', serif;
-	font-weight: bold;
-	}
-p {
-	font-family: 'Poppins', sans-serif;
-	font-weight: normal;
-	text-align: justify;
-	}
-a {
-	font-family: 'Poppins', sans-serif;
-	font-weight: normal;
-			}
-main li {
-	/*margin: 1vmin 0;
-	border: 1px solid #EEA0B2;
-	border-radius: 9px;
-	box-shadow:  0 2px 4px -2px black;*/
-	font-family: 'Poppins', sans-serif;
-	font-style: italic;
-	list-style-type: square;
-	list-style-position: inside;
-	}
-section {
-	margin: 5vmin 0;
-	border: 1px solid #EEA0B2;
-	border-radius: 9px;
-	box-shadow:  0 2px 4px -2px black;
-	scroll-margin-top: 9vmin;
-	padding: inherit;
-	}
-section a {
-	color: #A51D3D;
-	text-decoration: none;
-	}
-section a:hover, section a:active {
-	text-decoration: underline;
-	}
-#home {
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	}
-#chi-sono {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
-	justify-content: center;
-	}
-#servizi {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
-	justify-content: center;
-	}
-.profile {
-	/*margin: 0;*/
-	padding: 0;
-	max-width: 33.33vw;
-	object-fit:contain;
-	border-radius: 9px;
-	box-shadow: 0 2px 4px -2px black;
-	}
-@media screen and (orientation:portrait) {
-	#home, #chi-sono, #servizi {
-		display: flex;
-		align-items: flex-start;
-		flex-wrap: wrap;
-		justify-content: center;
-		}
-	.profile {
-		margin: 2vmin 0;
-		padding: 0;
-		max-width: 90vw;
-		object-fit:contain;
-		border-radius: 9px;
-		box-shadow:  0 2px 4px -2px black;
-		}
-	}
-/* footer */	
-footer {
-	padding: 1.5vmin;
-	background-color: #3E0E19;
-	color: white;
-	font-size: 66%;
-	}
-footer * {
-	padding: inherit;
-	}
-footer a {
-	color: #EEA0B2;
-	text-decoration: none;
-	}
-footer a:hover, footer a:active {
-	text-decoration: underline;
-	}
-		</style>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Biologa Nutrizionista a Siracusa. Consulenze alimentari di alta qualità basate su metodi scientifici.">
+		<title>Rosanna Di Carlo - Biologa Nutrizionista a Siracusa</title>
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
 		<!-- Intestazione -->
@@ -187,15 +19,15 @@ footer a:hover, footer a:active {
 				<li>
 					<a href="#home">Home</a>
 				</li>
-			    	<li>
-			    		<a href="#chi-sono">Chi Sono</a>
-		    		</li>
-			    	<li>
-			    		<a href="#servizi">Servizi</a>
-		    		</li>
-			    	<li>
-			    		<a href="#contatti">Contatti</a>
-		    		</li>
+				<li>
+					<a href="#chi-sono">Chi Sono</a>
+				</li>
+				<li>
+					<a href="#servizi">Servizi</a>
+				</li>
+				<li>
+					<a href="#contatti">Contatti</a>
+				</li>
 			</ul>
 		</nav>
 		<main>
@@ -215,16 +47,15 @@ footer a:hover, footer a:active {
 					</p>
 					<p>Insieme possiamo creare abitudini alimentari sostenibili e raggiungere i tuoi obiettivi di salute e forma fisica.
 					</p>
-					<p>Se sei pronto/a a esplorare un approccio alla nutrizione che privilegia il benessere e il piacere,
-						<br> 
-						<a href="tel:+393273527210">Chiama ora 
-						</a>
-					e prenota la tua consulenza gratuita, oppure 
-						<br>
-						<a href="mailto:dicarlonutrizione@gmail.com">Scrivi una email.
-						</a>
+					<p>Se sei pronto/a a esplorare un approccio alla nutrizione che privilegia il benessere e il piacere, prenota la tua consulenza gratuita 
+						<div class="cta">
+							<a class="cta-link" href="tel:+393273527210">Chiama ora 
+							</a>
+							<a class="cta-link" href="mailto:dicarlonutrizione@gmail.com">Invia una email
+							</a>
+						</div>
 					</p>
-					<p>— Rosanna Di Carlo, Biologa Nutrizionista a Siracusa</p>
+					<!--p>— Rosanna Di Carlo, Biologa Nutrizionista a Siracusa</p-->
 				</div>
 			</section>
 			<!-- Sezione Chi Sono -->
@@ -257,7 +88,7 @@ che il piacere del cibo rimanga al centro del tuo percorso nutrizionale, senza r
 					</p>
 					<h4>Approccio Olistico</h4>
 					<p>Considero il tuo benessere nel suo complesso, non limitandomi solo agli aspetti nutrizionali. Esploreremo insieme gli elementi chiave del tuo stile di vita, come il sonno, lo stress e l'attività fisica. Per assicurarti un servizio di alto livello su quest’ultimo aspetto, collaboro attivamente con un 
-						<br>
+						<!--br-->
 						<a href="https://gaetanotrigilio.it/">Chinesiologo e Personal Trainer 
 						</a>
 				che puoi trovare nel mio stesso studio. Questo ti permetterà di ottimizzare i tempi, consentendoti di concentrarti su nutrizione ed esercizio fisico senza stress aggiuntivo.
@@ -337,6 +168,14 @@ portino verso una salute duratura e soddisfacente. Insieme, lavoreremo per mette
 						<a href="tel:3273527210">327 352 7210</a>
 					</p>
 				</address>
+				<div class="cta">
+							<a class="cta-link" href="tel:+393273527210">Chiama ora 
+							</a>
+							<a class="cta-link" href="mailto:dicarlonutrizione@gmail.com">Invia una email
+							</a>
+				</div>
+				<a id="zl-url" class="zl-url" href="https://www.miodottore.it/rosanna-di-carlo-3/nutrizionista/siracusa" rel="nofollow" data-zlw-doctor="rosanna-di-carlo-3" data-zlw-type="big" data-zlw-opinion="false" data-zlw-hide-branding="true" data-zlw-saas-only="true">Rosanna Di Carlo - MioDottore.it</a>
+				<script>!function($_x,_s,id){var js,fjs=$_x.getElementsByTagName(_s)[0];if(!$_x.getElementById(id)){js = $_x.createElement(_s);js.id = id;js.src = "https://platform.docplanner.com/js/widget.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","zl-widget-s");</script>
 			</section>
 		</main>
 		<!-- Piede di Pagina -->
