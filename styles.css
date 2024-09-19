@@ -89,6 +89,7 @@ main a:hover, main a:active {
 	justify-content: space-around;
 	}
 .cta {
+	width:100%;
 	display: flex;
 	justify-content: space-around;
 }
@@ -114,7 +115,11 @@ section {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
+	flex-wrap:wrap;
 	}
+/*section > div {
+	max-width: 60%;*/
+}
 .carousel {
 	margin: 0;
 	padding: 0;
@@ -157,6 +162,9 @@ section {
 		object-fit: cover;
 		border-radius: 9px;
 		box-shadow:  0 2px 4px -2px black;
+		}	
+	section > div {
+	max-width: 100%;
 		}
 	}
 /* footer */	
