@@ -80,7 +80,8 @@ main a {
 	text-decoration: none;
 	color: #A51D3D;
 	font-weight: bold;
-			}
+	padding: 0;
+	}
 main a:hover, main a:active {
 	text-decoration: underline;
 	}
@@ -95,6 +96,7 @@ main a:hover, main a:active {
 }
 .cta-link {
 	margin: 5vmin 0;
+	padding: 1vmin 2vmin;
 	background-color: #DF4A6D;
 	color: white;
 	font-size: 4vmin;
@@ -117,8 +119,11 @@ section {
 	justify-content: center;
 	flex-wrap:wrap;
 	}
-/*section > div {
-	max-width: 60%;*/
+blockquote {
+	padding: 4vmin 8vmin;
+}
+li p {
+	display: inline;
 }
 .carousel {
 	margin: 0;
@@ -166,6 +171,9 @@ section {
 	section > div {
 	max-width: 100%;
 		}
+	li p {
+	display: block;
+	}	
 	}
 /* footer */	
 footer {
