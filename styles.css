@@ -124,6 +124,7 @@ blockquote {
 }
 li p {
 	display: inline;
+	text-align: left;
 }
 .carousel {
 	margin: 0;
