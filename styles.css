@@ -164,7 +164,7 @@ li p {
 		padding: 0;
 		max-width: 90vw;	
 		aspect-ratio: 1/1;
-		object-fit: cover;
+		object-fit: contain;
 		border-radius: 9px;
 		box-shadow:  0 2px 4px -2px black;
 		}	
